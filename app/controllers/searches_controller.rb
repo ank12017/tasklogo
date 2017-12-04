@@ -4,6 +4,7 @@ class SearchesController < ApplicationController
   	def index
 	  	@logos = Logo.all
 	  	@logos = Logo.search(params[:name])
+      @blogs= Blog.all
   	end
   	def new
 	  @search = Search.new

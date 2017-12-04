@@ -1,22 +1,28 @@
-<center>
-	<div class= "padding">
-		<center><h1><b>How It Works</h1></b><br></center>
-		<h4>Find a logo that you love. Buy it on the spot. Once you buy it, it is all yours. You alone own it.</h4><br>
+<div class="container">
+  	<div class="column">
+    	<div class= "col-md-8">
+			<center>
+				<div class= "padding">
+					<center><h1><b>How It Works</b></h1><br></center>
+					<h4>Find a logo that you love. Buy it on the spot. Once you buy it, it is all yours. You alone own it.</h4><br>
 
-		<div class="column">
-		
-		  <% for question in @search.questions %>
-		  <h2><b><%= h question.content %><b></h2>
-		  
-		    <% for answer in question.answers %>
-		      <h4><%= h answer.content %></h4>
-		    <% end %>
-		  
-		  <% end %>
-		
+					<div class="column">
+					
+					  <% for question in @search.questions %>
+					  <h2><b><%= h question.content %></b></h2>
+					  
+					    <% for answer in question.answers %>
+					      <h4><%= h answer.content %></h4>
+					    <% end %>
+					  
+					  <% end %>
+					
+					</div>
+				</div>
+			</center>
 		</div>
 	</div>
-</center>
+</div>
 <br><br><br><br>
 <br><br><br><br>
 <br><br><br><br>
